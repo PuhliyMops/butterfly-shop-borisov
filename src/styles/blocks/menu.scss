@@ -1,0 +1,35 @@
+.menu {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  a {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // &:hover {
+    //   color: $color-accent;
+    // }
+  }
+
+  .item {
+    text-align: center;
+    padding-right: 10px;
+    width: 117px;
+    height: 90px;
+    background-color: $color-dark;
+    padding-top: 33px;
+  }
+
+}
+

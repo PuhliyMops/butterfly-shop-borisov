@@ -1,0 +1,54 @@
+.footer {
+  background-color: $color-dark;
+  padding: 16px 0;
+}
+
+.footer-inner {
+  @include inner;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: auto;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  align-items: center;
+  color: #FFFFFF;
+  width: 180px;
+  height: 57px;
+}
+
+.number {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: white;
+  text-decoration: none;
+  margin-right: 60px;
+}
+
+.social {
+  display: flex;
+}
+
+.social-item {
+  list-style:none;
+  margin: 0;
+  padding-left: $gap-half;
+}
+
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
