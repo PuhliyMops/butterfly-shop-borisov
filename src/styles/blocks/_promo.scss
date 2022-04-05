@@ -1,5 +1,4 @@
 .promo {
-  padding: 50px 0;
   background-color: lightsteelblue;
   background-image: url("../images/promo.jpg");
   background-repeat: no-repeat;
@@ -8,26 +7,12 @@
 
 .promo-inner {
   @include inner;
-
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .promo-title {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
-
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
-  }
-
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
-  }
-
-  display: block;
   margin-top: 200px;
   font-family: $font;
   font-weight: 600;
@@ -41,4 +26,8 @@
 
 .btn-promo {
   @include btn;
+  margin-top: 100px;
+  margin-bottom: 214px;
+  height: 104px;
 }
+ // text-align: center;

@@ -1,11 +1,20 @@
 .works-inner {
   @include inner;
-  text-align: center;
+
 }
 
 .works-wrap {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.works-title {
+  @include section-title;
+}
+
+.works-pic {
+  flex-basis: 25%;
 }
 
 .btn-works {

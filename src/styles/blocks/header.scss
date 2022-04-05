@@ -1,8 +1,10 @@
 .header {
   position: fixed;
   width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
   background-color: $color-dark;
-  padding: 16px 0;
 }
 
 .header-inner {
