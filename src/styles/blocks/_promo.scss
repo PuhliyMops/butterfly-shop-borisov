@@ -22,12 +22,32 @@
   height: 196px;
   text-align: center;
   color: white;
+
+  @media (max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 .btn-promo {
   @include btn;
   margin-top: 100px;
   margin-bottom: 214px;
+  padding-top: 20px;
   height: 104px;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
- // text-align: center;
+

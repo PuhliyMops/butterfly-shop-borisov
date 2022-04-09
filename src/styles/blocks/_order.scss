@@ -1,5 +1,6 @@
 .order {
   text-align: center;
+  background-color:rgba($color: $color-dark, $alpha: 0.1)
 }
 
 .order-inner {
@@ -8,6 +9,7 @@
 
 .order-wrap {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -27,9 +29,4 @@
 
 .btn-order {
   @include btn;
-  margin-bottom: 130px;
-  padding: 30px 140px;
-  min-width: 412px;
-  font-size: 28px;
-  line-height: 34px;
 }
