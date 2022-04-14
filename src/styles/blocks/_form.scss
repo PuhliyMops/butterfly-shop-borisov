@@ -16,9 +16,17 @@
   flex-basis: 100%;
   margin-top: 90px;
   margin-bottom: 130px;
-  padding-left: $gap-half;
+  // padding-left: $gap-half;
   padding-right: $gap-half;
   border: 1px solid #000;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
 
 .form-input {

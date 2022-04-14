@@ -1,7 +1,22 @@
 .menu {
+
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    background-color: $color-dark;
+  }
   ul {
     display: flex;
     list-style: none;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {
@@ -16,13 +31,9 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-
-    // &:hover {
-    //   color: $color-accent;
-    // }
   }
 
-  .item {
+  .menu-item {
     text-align: center;
     padding-right: 10px;
     width: 117px;

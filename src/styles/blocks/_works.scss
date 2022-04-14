@@ -1,9 +1,10 @@
 .works-inner {
   @include inner;
-
 }
 
 .works-wrap {
+  margin-right: -20px;
+  margin-left: -20px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -16,6 +17,14 @@
 
 .works-pic {
   flex-basis: 25%;
+
+  @media (max-width: $tablet-max) {
+   flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+   display: block;
+  }
 }
 
 .btn-works {
