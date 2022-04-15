@@ -3,11 +3,15 @@
 }
 
 .works-wrap {
-  margin-right: -20px;
-  margin-left: -20px;
+  gap: 20px 20px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  overflow: hidden;
+
+   @media (max-width: $mobile-max) {
+    flex-flow: column nowrap;
+   }
 }
 
 .works-title {
@@ -16,15 +20,15 @@
 }
 
 .works-pic {
-  flex-basis: 25%;
+  flex-basis: 20%;
 
   @media (max-width: $tablet-max) {
-   flex-basis: 50%;
+   flex-basis: 45%;
   }
 
-  @media (max-width: $mobile-max) {
-   display: block;
-  }
+  // @media (max-width: $mobile-max) {
+  //  display: block;
+  // }
 }
 
 .btn-works {

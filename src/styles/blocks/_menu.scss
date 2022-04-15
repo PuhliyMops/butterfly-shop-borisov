@@ -14,8 +14,9 @@
     list-style: none;
 
     @media (max-width: $mobile-max) {
-      display: block;
-      text-align: center;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 
