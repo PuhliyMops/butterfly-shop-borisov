@@ -1,42 +1,85 @@
 .form {
   display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  margin-top: 90px;
+  margin-bottom: 130px;
+
+  gap: 20px;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .order-label {
   font-family: $font;
   font-size: 20px;
   line-height: 27px;
-  text-align: left;
 }
 
 .form-field {
-  flex-basis: 100%;
-  margin-top: 90px;
-  margin-bottom: 130px;
-  // padding-left: $gap-half;
-  padding-right: $gap-half;
+  flex-basis: 33.33%;
   border: 1px solid #000;
 
   @media (max-width: $tablet-max) {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
 
   @media (max-width: $mobile-max) {
-
+    margin-bottom: 30px;
   }
 }
 
+
 .form-input {
+  padding-left: 30px;
   width: 100%;
-  padding: 20px;
+  height: 104px;
   font-family: $font;
-  font-size: 20px;
-  line-height: 47px;
+  font-size: 28px;
+  line-height: 34px;
   color: $color-dark;
   border-radius: 6px;
   border: none;
 }
 
+.form-btn {
+  flex-basis: 33.33%;
+  border: 1px solid #000;
+
+  @media (max-width: $tablet-max) {
+    min-width: 98%;
+    text-align: center;
+    background-color: $color-accent;
+    border-radius: 6px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 90px;
+  }
+}
+
+.btn-order {
+  @include btn;
+  height: 104px;
+
+
+  @media (max-width: $tablet-max) {
+    // height: 104px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 278px;
+    height: 73px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}

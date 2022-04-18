@@ -1,5 +1,4 @@
 .order {
-  text-align: center;
   background-color:rgba($color: $color-dark, $alpha: 0.1)
 }
 
@@ -7,15 +6,9 @@
   @include inner;
 }
 
-.order-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .order-title {
-  margin-top: 130px;
   @include section-title;
+  margin-top: 130px;
 }
 
 .order-text {
@@ -27,6 +20,3 @@
   text-align: center;
 }
 
-.btn-order {
-  @include btn;
-}
