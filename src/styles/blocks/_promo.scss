@@ -1,9 +1,18 @@
 .promo {
-  background-color: lightsteelblue;
+  margin-top: 90px;
+  background-color: $color-dark;
   background-image: url("../images/promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @media (max-width: $mobile-max) {
+    margin-top: 70px;
+
+  }
+}
+
+.promo-fade {
+  background-color:rgba($color-dark, $alpha: 0.3);
 }
 
 .promo-inner {

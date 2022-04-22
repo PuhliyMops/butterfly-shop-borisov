@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="header-inner">
       <div class="header-wrap">
@@ -42,52 +43,38 @@
       </div>
     </div>
   </header>
-  <section class="promo">
-    <div class="promo-inner">
-      <h1 class="promo-title">Индивидуальный пошив галсутков-бабочек</h1>
-      <a href="#order" class="btn-promo"> Заказать бабочку</a>
-    </div>
-  </section>
-  <section class="works">
-    <div class="works-inner">
 
-      <h2 class="works-title">
-        Наши работы
-      </h2>
-      <div class="works-wrap">
-        <img src="images/portfolio-pic1.jpg" alt="бабочка такая" class="works-pic">
-        <img src="images/portfolio-pic2.jpg" alt="бабочка растакая" class="works-pic">
-        <img src="images/portfolio-pic3.jpg" alt="бабочка сякая" class="works-pic">
-        <img src="images/portfolio-pic4.jpg" alt="кривая" class="works-pic">
-        <a href="#" class="btn-works"> Все бабочки </a>
+  <main class="main">
+    <section class="reviews">
+      <div class="reviews-inner">
+
       </div>
+    </section>
 
-    </div>
+    <section class="order" id="order">
+      <div class="order-inner">
+        <h2 class="order-title"> Закажи пошив </h2>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече
+          он снимет мерки и поможет обределиться с тканью.</p>
+        <form action="#" class="form">
+          <div class="form-field">
+            <label for="name" class="order-label">Ваше имя</label>
+            <input name="name" id="name" type="text" class="form-input" placeholder="Иванов Иван">
+          </div>
+          <div class="form-field">
+            <label for="phone" class="order-label">Ваш телефон</label>
+            <input name="phone" id="phone" type="text" class="form-input" placeholder="8-800-555-35-35">
+          </div>
+          <div class="form-field">
+            <button class="btn-order" type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
+  </main>
 
-  </section>
-  <section class="order" id="order">
-
-    <div class="order-inner">
-      <h2 class="order-title"> Закажи пошив </h2>
-      <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
-        встрече
-        он снимет мерки и поможет обределиться с тканью.</p>
-      <form action="#" class="form">
-        <div class="form-field">
-          <label for="name" class="order-label">Ваше имя</label>
-          <input name="name" id="name" type="text" class="form-input" placeholder="Иванов Иван">
-        </div>
-        <div class="form-field">
-          <label for="phone" class="order-label">Ваш телефон</label>
-          <input name="phone" id="phone" type="text" class="form-input" placeholder="8-800-555-35-35">
-        </div>
-        <div class="form-field">
-          <button class="btn-order" type="submit">Заказать</button>
-        </div>
-      </form>
-    </div>
-    </div>
-  </section>
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-wrap">
@@ -110,6 +97,7 @@
 
   </footer>
   <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
