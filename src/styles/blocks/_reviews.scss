@@ -1,0 +1,11 @@
+.reviews {
+
+}
+
+.reviews-inner {
+  @include inner;
+}
+
+.reviews-title {
+  @include section-title;
+}
