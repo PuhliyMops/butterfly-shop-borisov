@@ -65,21 +65,3 @@
   }
 }
 
-.btn-order {
-  @include btn;
-  height: 104px;
-
-
-  @media (max-width: $tablet-max) {
-    // height: 104px;
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  @media (max-width: $mobile-max) {
-    width: 278px;
-    height: 73px;
-    font-size: 24px;
-    line-height: 33px;
-  }
-}
