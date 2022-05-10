@@ -29,6 +29,7 @@
 
 .works-pic {
   object-fit: cover;
+  position: relative;
 
   @media (max-width: $tablet-max) {
     flex-basis: 48%;
@@ -38,6 +39,20 @@
     // margin: 0 auto;
   }
 }
+
+.pic-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: $font;
+  height: 33px;
+  font-size: 24px;
+  line-height: 33px;
+  color: white ;
+  text-align: center;
+  background-color: rgba($color: $color-dark, $alpha: 0.4);
+}
+
 
 .btn-works {
   @include btn;
