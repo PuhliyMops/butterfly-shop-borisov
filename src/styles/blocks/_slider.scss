@@ -1,0 +1,12 @@
+.slider-inner {
+  @include inner;
+  padding-top: 90px;
+}
+
+.slider-title {
+  @include section-title;
+}
+
+.slider-wrap {
+  margin-top: 50px;
+}

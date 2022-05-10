@@ -70,8 +70,11 @@
   @include btn;
   margin-top: 120px;
   margin-bottom: 130px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   height: 104px;
+  text-align: center;
 
 
   @media (max-width: $tablet-max) {

@@ -68,7 +68,6 @@ $(document).ready(function(){
 // Отзывы-каруселька
 
   $('.j-carousel').slick({
-  dots: true
   });
 
 
