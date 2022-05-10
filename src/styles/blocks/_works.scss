@@ -1,3 +1,7 @@
+.works{
+  padding-bottom: 130px;
+}
+
 .works-inner {
   @include inner;
 }
@@ -5,58 +9,70 @@
 .works-title {
   @include section-title;
   margin-bottom: 97px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 
 .works-wrap {
-  gap: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
-
+  margin: 0 -10px;
   @media (max-width: $tablet-max) {
-    flex-basis: 49%;
+   flex-wrap: wrap;
+   margin: 0;
   }
 
    @media (max-width: $mobile-max) {
-    flex-flow: column nowrap;
-    gap: 10px;
+    display: block;
     margin-top: 10px;
-
    }
 }
 
 .works-pic {
-  object-fit: cover;
-  position: relative;
+  padding: 0 10px;
 
   @media (max-width: $tablet-max) {
-    flex-basis: 48%;
+    flex-basis: 50%;
+    padding: 10px 10px;
   }
 
   @media (max-width: $mobile-max) {
-    // margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
-.pic-text {
+.works-card {
+  position: relative;
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card-text {
   position: absolute;
   bottom: 0;
+  left: 0;
+  padding: 15px;
   width: 100%;
   font-family: $font;
-  height: 33px;
   font-size: 24px;
-  line-height: 33px;
   color: white ;
   text-align: center;
-  background-color: rgba($color: $color-dark, $alpha: 0.4);
+  background-color: rgba($color-dark, 0.4);
 }
 
 
-.btn-works {
-  @include btn;
-  margin-top: 120px;
-  margin-bottom: 130px;
-  padding-top: 20px;
-}
+

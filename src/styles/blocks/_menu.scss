@@ -6,22 +6,21 @@
     left: 0;
     display: none;
     width: 100%;
-    padding: 10px;
     background-color: $color-dark;
   }
   ul {
     display: flex;
+    margin: 25px;
     list-style: none;
 
     @media (max-width: $mobile-max) {
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+     display: block;
+     text-align: center;
     }
   }
 
   li {
-    margin: 0 35px;
+    margin: 18px;
   }
 
   a {
@@ -34,14 +33,6 @@
     text-transform: uppercase;
   }
 
-  .menu-item {
-    text-align: center;
-    padding-right: 10px;
-    width: 117px;
-    height: 90px;
-    background-color: $color-dark;
-    padding-top: 33px;
-  }
 
 }
 

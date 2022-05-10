@@ -11,6 +11,9 @@
     padding: 20px 0;
   }
 
+  @media (max-width: $mobile-max) {
+    padding: 0;
+  }
 }
 
 .header-inner {

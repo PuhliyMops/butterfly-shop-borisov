@@ -1,31 +1,17 @@
-.btn {
-  display: inline-block;
-  height: 104px;
-  color: #fff;
-  background-color: $color-accent;
-  border-radius: 6px;
-  text-align: center;
-
-}
-
-
 .btn-promo {
   @include btn;
   margin-top: 100px;
-  margin-bottom: 214px;
   padding-top: 20px;
   height: 104px;
 
 
   @media (max-width: $tablet-max) {
     margin-top: 100px;
-    margin-bottom: 190px;
     height: 104px;
   }
 
   @media (max-width: $mobile-max) {
     margin-top: 80px;
-    margin-bottom: 100px;
     padding-top: 20px;
     width: 278px;
     height: 73px;
@@ -34,6 +20,11 @@
   }
 }
 
+.btn-works {
+  @include btn;
+  margin-top: 120px;
+  padding-top: 20px;
+}
 
 .btn-order {
   @include btn;
