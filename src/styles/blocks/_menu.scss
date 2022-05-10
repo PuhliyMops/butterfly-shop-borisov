@@ -6,21 +6,25 @@
     left: 0;
     display: none;
     width: 100%;
+    padding: 10px;
     background-color: $color-dark;
   }
   ul {
     display: flex;
-    margin: 25px;
     list-style: none;
 
     @media (max-width: $mobile-max) {
-     display: block;
-     text-align: center;
+      display: block;
+      margin: 25px;
+      text-align: center;
     }
   }
 
   li {
-    margin: 18px;
+    margin: 0 35px;
+    @media (max-width: $mobile-max) {
+      margin: 18px;
+    }
   }
 
   a {
@@ -32,7 +36,6 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-
 
 }
 
