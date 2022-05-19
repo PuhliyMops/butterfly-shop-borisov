@@ -9,6 +9,7 @@
 
 .faq-title {
   @include section-title;
+  padding: 80px;
 }
 
 .faq-answer {
@@ -16,15 +17,22 @@
 }
 
 .faq-btn {
-  text-align: left;
-  width: 100%;
   padding: 20px;
+  font-style: $font;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: left;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
 .faq-answer {
   padding: 0 20px 20px 20px;
+  font-style: $font;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .faq-item {
@@ -32,3 +40,12 @@
   border: 1px solid #000;
   border-radius: 5px;
 }
+
+// .circle {
+//   border-radius: 50%;
+//   width: 40px;
+//   height: 40px;
+//   color: white;
+//   background-color: $color-accent;
+//   position: relative;
+// }

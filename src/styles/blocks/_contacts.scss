@@ -43,8 +43,15 @@
 
 .contacts-item-wrap{
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contacts-item-text{
   padding: 10px 0;
 }
+
+.contacts-item-map{
+
+}
+
