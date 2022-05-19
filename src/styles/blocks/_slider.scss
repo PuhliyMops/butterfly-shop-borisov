@@ -1,10 +1,14 @@
+.slider {
+padding: 130px 0;
+}
+
 .slider-inner {
   @include inner;
-  padding-top: 90px;
 }
 
 .slider-title {
   @include section-title;
+  padding-top: 90 px;
 }
 
 .slider-wrap {
